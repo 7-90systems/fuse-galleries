@@ -1,0 +1,47 @@
+/**
+ *  Admin stylesheet.
+ */
+
+#fuse_galleries_gallery_container {
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#fuse_galleries_gallery_container .gallery_item {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: move;
+}
+#fuse_galleries_gallery_container .gallery_item.add {
+    border: 2px solid #CCCCCC;
+    text-indent: -150px;
+    overflow: hidden;
+    background: url("../images/add.png") center center no-repeat;
+    background-size: 40px 40px;
+    cursor: pointer;
+}
+#fuse_galleries_gallery_container .gallery_item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#fuse_galleries_gallery_container .gallery_item .delete {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 16px;
+    height: 16px;
+    background: url("../images/icons/cancel.png") center center no-repeat;
+    text-indent: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    display: none;
+}
+#fuse_galleries_gallery_container .gallery_item:hover .delete {
+    display: block;
+}
